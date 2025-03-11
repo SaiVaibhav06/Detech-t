@@ -1,0 +1,191 @@
+/* Apply a gradient background with animation */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    text-align: center;
+    color: white;
+}
+
+/* Background Animation */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* Logo on the Left */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Signup & Login Buttons */
+/* Adjusting Navbar */
+.nav-links {
+    display: flex;
+    gap: 15px;
+    margin-right: 40px; /* Moves the buttons slightly to the left */
+}
+
+.nav-links .btn {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 14px;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-links .btn:hover {
+    background-color: white;
+    color: #333;
+}
+
+/* Center Content */
+.container {
+    margin-top: 120px;
+    padding: 20px;
+}
+
+/* Task List Styling */
+#task-list {
+    list-style: none;
+    padding: 0;
+    width: 50%;
+    margin: 20px auto;
+}
+
+#task-list li {
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out, background 0.2s ease-in-out;
+}
+
+#task-list li:hover {
+    background: #ddd;
+    transform: scale(1.05);
+}
+
+/* Button Style */
+.btn {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    color: white;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, #ff4b2b, #ff416c);
+    transform: scale(1.1);
+}
+/* Navbar Styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.nav-links button:hover {
+    background-color: #45a049;
+}
+
+/* Task Input */
+.task-input {
+    display: flex;
+    gap: 15px; /* Adjust space between date and time inputs */
+    align-items: center;
+}
+.task-input input {
+    padding: 8px;
+    margin: 5px;
+    margin-right: 10px; 
+}
+
+.task-input button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.task-input button:hover {
+    background-color: #0056b3;
+}
+
+/* Task List */
+#task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#task-list li {
+    padding: 10px;
+    margin: 5px;
+    background: #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

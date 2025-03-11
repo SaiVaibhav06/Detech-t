@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">VAST</div>
+        <div class="nav-links">
+            <div id="auth-links">
+                <button onclick="redirectToSignup()">Sign Up</button>
+                <button onclick="redirectToLogin()">Log In</button>
+            </div>
+            <div class="user-info" id="user-info" style="display: none;">
+                <button id="logout-button">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Welcome to the AI To-Do List App</h1>
+       
+
+
+        <!-- Task Input Section -->
+        <div class="task-form">
+        
+            <input type="date" id="task-date">
+            <input type="time" id="task-time">
+            <select id="task-ampm">
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+            </select>
+            
+        </div>
+        
+        
+        <button id="start-recording">Start Voice Input</button>
+        <p id="status">Click the button to add a task</p>
+
+        <ul id="task-list"></ul>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

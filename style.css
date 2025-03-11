@@ -1,0 +1,280 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2); /* Background gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Navigation Bar */
+nav {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(22, 17, 17); /* Initially set to white */
+}
+
+.nav-links, .user-info {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    background: rgba(0, 238, 20, 0.3);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: rgba(255, 0, 0, 0.5);
+}
+
+/* Main Container */
+.container {
+    width: 80%; /* Increase width */
+    max-width: 1000px; /* Allow it to be larger */
+    padding: 30px; /* Increase padding */
+    margin: 50px auto; /* Center it with more spacing */
+    border-radius: 10px;
+    background: transparent; /* Make the background transparent */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* More depth */
+    min-height: 400px; /* Ensure height is larger */
+}
+
+/* Heading */
+h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+/* Voice Input Button */
+#start-recording {
+    background: #ff7eb3;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 10px;
+}
+
+#start-recording:hover {
+    background: #ff527b;
+}
+
+/* Status Text */
+#status {
+    margin-top: 15px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Task List */
+#task-list {
+    list-style: none;
+    margin-top: 15px;
+    text-align: left;
+    padding: 0;
+}
+
+#task-list li {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: white;
+}
+
+/* Task Input Section */
+.task-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adds spacing between elements */
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px; /* Adds space below the form */
+}
+
+.task-form input,
+.task-form select,
+.task-form button {
+    width: 180px; /* Set uniform width for all inputs */
+    padding: 8px 12px;
+    font-size: 16px;
+    text-align: center; /* Centers text inside inputs */
+}
+
+.task-time-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#task-date {
+    margin-right: 15px; /* Adds space to the right of date input */
+}
+
+.container p, .container button {
+    font-size: 18px;
+}
+
+/* General styles for inputs */
+input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Button */
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: #ff7eb3;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #ff527b;
+}
+
+/* Signup and Login links */
+p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+p a {
+    color: #ff7eb3;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Login container */
+.login-container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #fff;
+    width: 350px;
+}
+
+/* Signup container */
+.signup-container {
+    background: rgba(210, 135, 135, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #fff;
+    width: 350px;
+}
+
+/* Heading */
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Input fields */
+.input-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Button */
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: #ff7eb3;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #ff527b;
+}
+
+/* Login link */
+p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+p a {
+    color: #ff7eb3;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
